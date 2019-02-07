@@ -166,6 +166,10 @@ def test_multiply_primes():
     print('Actual output = ', multiply_primes(2, 8))
 
 
+
+
+
+
 def multiply_primes(m,n):
     """
        #    What comes in:
@@ -191,9 +195,11 @@ def multiply_primes(m,n):
     for k in range(n-m+1):
         if is_prime(m+k):
             product = product*(m+k)
+
     for k in range(2, (n // 2)):
         if n % k == 1:
             return 0
+
     return product
     ################################################################################
     #   DONE: 6. Write the function multiply_primes(m,n) below here
